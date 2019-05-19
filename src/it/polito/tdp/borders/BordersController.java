@@ -66,7 +66,7 @@ public class BordersController {
 		txtResult.setText("Lista Vicini: \n\n");
 		
 		for (Country c : model.trovaVicini(cbxStato.getValue()))
-			txtResult.appendText(c.getNome()+"\n");
+			txtResult.appendText(c+"\n");
     }
 
 	@FXML // This method is called by the FXMLLoader when initialization is complete

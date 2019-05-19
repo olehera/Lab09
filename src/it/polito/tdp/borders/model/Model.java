@@ -67,7 +67,7 @@ public class Model {
 		DepthFirstIterator<Country, DefaultEdge> it = new DepthFirstIterator<>(grafo, c);
             
         while (it.hasNext())
-        	vicini.add(0, it.next());
+        	vicini.add(it.next());
     	
 		return vicini.subList(1, vicini.size());
 	}
